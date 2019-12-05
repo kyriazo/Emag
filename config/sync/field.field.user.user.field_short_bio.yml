@@ -1,0 +1,21 @@
+uuid: c19cddf9-e866-4353-8d74-40c00c6b7386
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_short_bio
+  module:
+    - text
+    - user
+id: user.user.field_short_bio
+field_name: field_short_bio
+entity_type: user
+bundle: user
+label: 'Short Bio'
+description: 'Write a Short Bio About Yourself.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

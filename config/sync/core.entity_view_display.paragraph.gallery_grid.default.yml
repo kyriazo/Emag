@@ -1,0 +1,22 @@
+uuid: ec38b1a6-fe01-473d-97ec-0ab324ed046c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery_grid.field_field_media
+    - paragraphs.paragraphs_type.gallery_grid
+id: paragraph.gallery_grid.default
+targetEntityType: paragraph
+bundle: gallery_grid
+mode: default
+content:
+  field_field_media:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: gallery_grid
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

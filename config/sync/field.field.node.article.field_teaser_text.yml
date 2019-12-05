@@ -1,0 +1,19 @@
+uuid: 87b8af67-1a4c-4d4d-883b-4f8b45a25da5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_text
+    - node.type.article
+id: node.article.field_teaser_text
+field_name: field_teaser_text
+entity_type: node
+bundle: article
+label: 'Teaser Text'
+description: 'The teaser text is displayed on landing pages in the teasers. Additionally, it is used for Facebook and Twitter snippets.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

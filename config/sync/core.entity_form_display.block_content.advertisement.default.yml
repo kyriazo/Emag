@@ -1,0 +1,32 @@
+uuid: ff96f916-2eee-439c-bbb3-f4760ccc39c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.advertisement
+    - field.field.block_content.advertisement.body
+  module:
+    - text
+id: block_content.advertisement.default
+targetEntityType: block_content
+bundle: advertisement
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

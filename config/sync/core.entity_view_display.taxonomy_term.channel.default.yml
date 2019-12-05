@@ -1,0 +1,27 @@
+uuid: 9c21914d-d904-4070-a1dd-7f282f54b76e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.channel.field_color
+    - field.field.taxonomy_term.channel.field_media
+    - field.field.taxonomy_term.channel.layout_builder__layout
+    - taxonomy.vocabulary.channel
+  module:
+    - text
+id: taxonomy_term.channel.default
+targetEntityType: taxonomy_term
+bundle: channel
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_color: true
+  field_media: true
+  layout_builder__layout: true

@@ -1,0 +1,195 @@
+uuid: b99089af-9df5-4193-80dc-a30fdc3b5721
+langcode: en
+status: true
+dependencies: {  }
+id: article_layout_3
+label: 'Article Layout 3'
+targetEntityType: node
+targetBundle: article
+layout:
+  -
+    layout_id: themag_onecol_section
+    layout_settings:
+      section_bg: ''
+      section_padding: ''
+      section_margin: ''
+      section_custom_classes: ''
+      container_style: container-full
+      row_custom_classes: ''
+      no_gutters: 1
+      column_widths: '12'
+      sticky_columns: 0
+      first:
+        custom_classes: ''
+    components:
+      579beebc-402a-407b-8acd-7a095812be80:
+        uuid: 579beebc-402a-407b-8acd-7a095812be80
+        region: first
+        configuration:
+          id: 'views_block:mg_article_headers-block_3'
+          label: ''
+          provider: views
+          label_display: '0'
+          views_label: ''
+          items_per_page: none
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: themag_twocol_section
+    layout_settings:
+      section_bg: ''
+      section_padding: py-xsmall
+      section_custom_classes: shadow-sm
+      container_style: container
+      row_custom_classes: ''
+      no_gutters: 0
+      column_widths: custom
+      sticky_columns: 0
+      first:
+        custom_classes: 'd-none d-lg-block col-lg-6'
+      second:
+        custom_classes: 'col-12 col-lg-6'
+    components:
+      d86f7aaa-44c9-46a2-b109-40645c6beaca:
+        uuid: d86f7aaa-44c9-46a2-b109-40645c6beaca
+        region: first
+        configuration:
+          id: 'views_block:mg_article_authored_info-block_1'
+          label: ''
+          provider: views
+          label_display: '0'
+          views_label: ''
+          items_per_page: none
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+      dccbc9b9-9172-43d8-9b44-a7f0a10514fa:
+        uuid: dccbc9b9-9172-43d8-9b44-a7f0a10514fa
+        region: second
+        configuration:
+          id: shariff_block
+          label: 'Shariff share buttons'
+          provider: shariff
+          label_display: '0'
+          shariff_default_settings: 1
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: themag_twocol_section
+    layout_settings:
+      section_bg: ''
+      section_padding: ''
+      section_margin: my-default
+      section_custom_classes: ''
+      container_style: container
+      row_custom_classes: ''
+      no_gutters: 0
+      column_widths: 8-4
+      sticky_columns: 1
+      first:
+        custom_classes: ''
+      second:
+        custom_classes: ''
+    components:
+      44cb52cb-af69-422b-ae5b-002d19715b7f:
+        uuid: 44cb52cb-af69-422b-ae5b-002d19715b7f
+        region: first
+        configuration:
+          id: 'field_block:node:article:field_paragraphs'
+          label: Paragraphs
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: entity_reference_revisions_entity_view
+            settings:
+              view_mode: default
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+        additional: {  }
+        weight: 1
+      1606c313-93e9-44be-a743-2ca79bea4dd5:
+        uuid: 1606c313-93e9-44be-a743-2ca79bea4dd5
+        region: second
+        configuration:
+          id: 'views_block:mg_content_related_by_tags-block_1'
+          label: ''
+          provider: views
+          label_display: visible
+          views_label: ''
+          items_per_page: none
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+      57ea3dee-8797-4b97-a336-e4350ada2d03:
+        uuid: 57ea3dee-8797-4b97-a336-e4350ada2d03
+        region: first
+        configuration:
+          id: 'field_block:node:article:field_tags'
+          label: Tags
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: inline
+            type: entity_reference_label
+            settings:
+              link: true
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+        additional: {  }
+        weight: 2
+      25649ecf-68b4-4944-a854-f0fa7890075f:
+        uuid: 25649ecf-68b4-4944-a854-f0fa7890075f
+        region: first
+        configuration:
+          id: 'field_block:node:article:field_comment'
+          label: Comments
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: comment_default
+            settings:
+              view_mode: default
+              pager_id: 0
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+        additional: {  }
+        weight: 3
+    third_party_settings: {  }
+  -
+    layout_id: themag_onecol_section
+    layout_settings:
+      section_bg: ''
+      section_padding: ''
+      section_margin: my-default
+      section_custom_classes: ''
+      container_style: container
+      row_custom_classes: ''
+      no_gutters: 0
+      column_widths: '12'
+      sticky_columns: 0
+      first:
+        custom_classes: ''
+    components:
+      8e1b7228-2805-429a-8f80-2bed2143c654:
+        uuid: 8e1b7228-2805-429a-8f80-2bed2143c654
+        region: first
+        configuration:
+          id: 'views_block:mg_content_related_by_category-block_1'
+          label: ''
+          provider: views
+          label_display: visible
+          views_label: ''
+          items_per_page: none
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }

@@ -1,0 +1,19 @@
+uuid: 1fcb41f0-51e1-482f-b5dc-095c7b68876b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_author
+    - media.type.pinterest
+id: media.pinterest.field_author
+field_name: field_author
+entity_type: media
+bundle: pinterest
+label: Author
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

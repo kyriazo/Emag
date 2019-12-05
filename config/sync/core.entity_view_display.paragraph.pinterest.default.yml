@@ -1,0 +1,22 @@
+uuid: fb11c311-e983-493c-863d-676fc9a2c8d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pinterest.field_field_media
+    - paragraphs.paragraphs_type.pinterest
+id: paragraph.pinterest.default
+targetEntityType: paragraph
+bundle: pinterest
+mode: default
+content:
+  field_field_media:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

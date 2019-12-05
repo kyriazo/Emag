@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.default
+    - core.entity_view_mode.commerce_product_variation.teaser
+    - field.field.commerce_product_variation.default.field_image
+    - image.style.product_teaser
+  module:
+    - commerce_price
+    - image
+id: commerce_product_variation.default.teaser
+targetEntityType: commerce_product_variation
+bundle: default
+mode: teaser
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: product_teaser
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  price:
+    label: hidden
+    type: commerce_price_default
+    weight: 1
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+hidden:
+  list_price: true
+  product_id: true
+  sku: true
+  title: true

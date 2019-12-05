@@ -1,0 +1,25 @@
+uuid: 8d288236-f506-42a5-bf55-772444fc6bf5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7220b7e7-3ead-421a-b249-d9279bcadfc2'
+  module:
+    - block_content
+  theme:
+    - themag_st
+id: themag_st_shortaboutus_2
+theme: themag_st
+region: footer_first
+weight: -4
+provider: null
+plugin: 'block_content:7220b7e7-3ead-421a-b249-d9279bcadfc2'
+settings:
+  id: 'block_content:7220b7e7-3ead-421a-b249-d9279bcadfc2'
+  label: 'Short About Us'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

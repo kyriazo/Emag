@@ -1,0 +1,28 @@
+uuid: 9d5368fb-77f5-4194-9a81-dcc2b7b82c11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_media
+    - media.type.image
+    - node.type.themag_landing_page
+id: node.themag_landing_page.field_teaser_media
+field_name: field_teaser_media
+entity_type: node
+bundle: themag_landing_page
+label: 'Teaser Media'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,48 @@
+uuid: cf9f4f0b-c2ef-4363-804f-30553e6e0885
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.article.field_channel
+    - field.field.node.article.field_comment
+    - field.field.node.article.field_paragraphs
+    - field.field.node.article.field_tags
+    - field.field.node.article.field_teaser_media
+    - field.field.node.article.field_teaser_text
+    - field.field.node.article.layout_selection
+    - node.type.article
+  module:
+    - field_formatter
+    - user
+id: node.article.search_index
+targetEntityType: node
+bundle: article
+mode: search_index
+content:
+  field_paragraphs:
+    type: field_link
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      type: entity_reference_revisions_entity_view
+      settings:
+        view_mode: default
+    third_party_settings: {  }
+  field_teaser_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  field_channel: true
+  field_comment: true
+  field_tags: true
+  field_teaser_media: true
+  layout_builder__layout: true
+  layout_selection: true
+  links: true
+  shariff_field: true

@@ -1,0 +1,10 @@
+uuid: 8040d52c-bf3c-4174-a6af-626081d8d16b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.paragraph_preview
+label: 'Paragraph Preview'
+targetEntityType: media
+cache: true

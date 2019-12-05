@@ -1,0 +1,30 @@
+uuid: ec90ccb8-bfc7-41d9-b289-2be90eb574eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.instagram.field_author
+    - field.field.media.instagram.field_url
+    - media.type.instagram
+  module:
+    - link
+id: media.instagram.default
+targetEntityType: media
+bundle: instagram
+mode: default
+content:
+  field_url:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  field_author: true
+  name: true
+  path: true
+  status: true
+  uid: true

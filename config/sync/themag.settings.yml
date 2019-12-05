@@ -1,0 +1,64 @@
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 1
+favicon:
+  use_default: 1
+themag_header_style: header_a
+themag_sticky_header: 0
+themag_header_banner: ''
+themag_search_button_text: Go
+themag_search_field_placeholder_text: 'Enter the terms you wish to search for'
+themag_toggle_scroll_to_top: 1
+themag_use_custom_css_file: 0
+themag_use_custom_js_file: 0
+themag_additional_css: ''
+themag_additional_javascript: ''
+rrssb_buttons:
+  rrssb_email: rrssb_email
+  rrssb_facebook: rrssb_facebook
+  rrssb_twitter: rrssb_twitter
+  rrssb_googleplus: rrssb_googleplus
+  rrssb_instagram: 0
+  rrssb_tumblr: 0
+  rrssb_linkedin: 0
+  rrssb_reddit: 0
+  rrssb_vk: 0
+  rrssb_hackernews: 0
+  rrssb_pocket: 0
+  rrssb_youtube: 0
+  rrssb_pinterest: 0
+  rrssb_github: 0
+  rrssb_print: 0
+  rrssb_whatsapp: 0
+themag_rrssb_buttons:
+  rrssb_facebook: rrssb_facebook
+  rrssb_twitter: rrssb_twitter
+  rrssb_googleplus: rrssb_googleplus
+  rrssb_email: rrssb_email
+  rrssb_tumblr: 0
+  rrssb_linkedin: 0
+  rrssb_reddit: 0
+  rrssb_vk: 0
+  rrssb_hackernews: 0
+  rrssb_pocket: 0
+themag_sticky_sidebar: 1
+themag_header_user_icon: 1
+themag_header_search_icon: 1
+themag_facebook: 'http://facebook.com'
+themag_facebook_link_title: ''
+themag_twitter: 'http://twitter.com'
+themag_twitter_link_title: ''
+themag_googleplus: ''
+themag_googleplus_link_title: ''
+themag_youtube: 'http://youtube.com'
+themag_youtube_link_title: ''
+themag_instagram: 'http://instagram.com'
+themag_instagram_link_title: ''
+themag_pinterest: 'http://pinterest.com'
+themag_pinterest_link_title: ''
+themag_tumblr: ''
+themag_tumblr_link_title: ''

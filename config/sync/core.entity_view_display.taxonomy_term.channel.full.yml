@@ -1,0 +1,199 @@
+uuid: 52cc6a91-afd9-4eb3-b1db-471a4983772b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - field.field.taxonomy_term.channel.field_color
+    - field.field.taxonomy_term.channel.field_media
+    - field.field.taxonomy_term.channel.layout_builder__layout
+    - taxonomy.vocabulary.channel
+    - views.view.mg_popular_content
+    - views.view.mg_taxonomy_term
+  module:
+    - layout_builder
+    - layout_library
+    - system
+    - text
+    - themag_layouts
+    - views
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: themag_onecol_section
+        layout_settings:
+          section_bg: ''
+          section_padding: ''
+          section_margin: my-default
+          section_custom_classes: mt-6
+          container_style: container
+          row_custom_classes: ''
+          no_gutters: 0
+          column_widths: '12'
+          sticky_columns: null
+          first:
+            custom_classes: ''
+        components:
+          1a1ee6ec-1039-4421-85ce-7cd1e57617cb:
+            uuid: 1a1ee6ec-1039-4421-85ce-7cd1e57617cb
+            region: first
+            configuration:
+              id: 'field_block:taxonomy_term:channel:name'
+              label: Name
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: themag_onecol_section
+        layout_settings:
+          section_bg: ''
+          section_padding: ''
+          section_margin: my-default
+          section_custom_classes: mt-n5
+          container_style: container
+          row_custom_classes: ''
+          no_gutters: 0
+          column_widths: '12'
+          sticky_columns: null
+          first:
+            custom_classes: ''
+        components:
+          b2e4f69d-f0e2-4d64-b236-3cb146855e1c:
+            uuid: b2e4f69d-f0e2-4d64-b236-3cb146855e1c
+            region: first
+            configuration:
+              id: system_breadcrumb_block
+              label: Breadcrumbs
+              provider: system
+              label_display: '0'
+              context_mapping: {  }
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+      -
+        layout_id: themag_onecol_section
+        layout_settings:
+          section_bg: ''
+          section_padding: ''
+          section_margin: my-default
+          section_custom_classes: mt-n4
+          container_style: container
+          row_custom_classes: ''
+          no_gutters: 0
+          column_widths: '12'
+          sticky_columns: null
+          first:
+            custom_classes: ''
+        components:
+          f5952845-8358-40ab-ad9f-7099a191a47a:
+            uuid: f5952845-8358-40ab-ad9f-7099a191a47a
+            region: first
+            configuration:
+              id: 'field_block:taxonomy_term:channel:description'
+              label: Description
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: themag_twocol_section
+        layout_settings:
+          section_bg: ''
+          section_padding: ''
+          section_margin: my-default
+          section_custom_classes: ''
+          container_style: container
+          row_custom_classes: ''
+          no_gutters: 0
+          column_widths: 8-4
+          sticky_columns: 1
+          first:
+            custom_classes: ''
+          second:
+            custom_classes: ''
+        components:
+          dbd04e5a-722f-4b0f-81d6-9082b11b9fe3:
+            uuid: dbd04e5a-722f-4b0f-81d6-9082b11b9fe3
+            region: first
+            configuration:
+              id: 'views_block:mg_taxonomy_term-block_1'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: '1'
+              pager: some
+              pager_offset: 0
+              context_mapping:
+                term_node_tid_depth: layout_builder.entity
+            additional: {  }
+            weight: 0
+          7abd9f0b-f135-44c6-acc6-9581efcec55d:
+            uuid: 7abd9f0b-f135-44c6-acc6-9581efcec55d
+            region: first
+            configuration:
+              id: 'views_block:mg_taxonomy_term-block_3'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: none
+              pager: view
+              pager_offset: 1
+              context_mapping:
+                term_node_tid_depth: layout_builder.entity
+            additional: {  }
+            weight: 1
+          7c63b1c8-4d2b-41c9-ae29-411bc622eaee:
+            uuid: 7c63b1c8-4d2b-41c9-ae29-411bc622eaee
+            region: second
+            configuration:
+              id: 'views_block:mg_popular_content-block_3'
+              label: Popular
+              provider: views
+              label_display: visible
+              views_label: Popular
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+  layout_library:
+    enable: false
+id: taxonomy_term.channel.full
+targetEntityType: taxonomy_term
+bundle: channel
+mode: full
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_color: true
+  field_media: true
+  layout_builder__layout: true

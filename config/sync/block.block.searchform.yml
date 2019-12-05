@@ -1,0 +1,20 @@
+uuid: bfcc8e0f-9896-4bfa-a5c6-55af7bff538a
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - themag_st
+id: searchform
+theme: themag_st
+region: footer_third
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

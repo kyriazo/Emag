@@ -1,0 +1,24 @@
+uuid: 9edc0bf5-aeb5-46fe-9ee4-8256ac886852
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content
+label: Content
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  69e20856-11b7-4a51-b81a-197ddab2daac:
+    id: node_type
+    bundles:
+      article: article
+      page: page
+      themag_landing_page: themag_landing_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 69e20856-11b7-4a51-b81a-197ddab2daac
+selection_logic: and
+weight: -10
+relationships: {  }

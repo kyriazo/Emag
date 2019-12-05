@@ -1,0 +1,22 @@
+uuid: 16e20c8e-80bc-4565-b324-b9652d49b13f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - pd_seven
+_core:
+  default_config_hash: kbdOodyUSEduPV9BPyJ4fuvxvTR-RNk3PuJGEVrUDzY
+id: help
+theme: pd_seven
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

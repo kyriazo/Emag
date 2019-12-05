@@ -1,0 +1,30 @@
+uuid: e7d76088-d136-45b8-bce9-617e72f20d21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.twitter.field_author
+    - field.field.media.twitter.field_url
+    - media.type.twitter
+  module:
+    - link
+id: media.twitter.default
+targetEntityType: media
+bundle: twitter
+mode: default
+content:
+  field_url:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  field_author: true
+  name: true
+  path: true
+  status: true
+  uid: true

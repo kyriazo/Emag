@@ -1,0 +1,30 @@
+uuid: 5da48691-0bed-4b70-a6f5-841ea225a419
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.instagram.field_author
+    - field.field.media.instagram.field_url
+    - media.type.instagram
+  module:
+    - media_entity_instagram
+id: media.instagram.default
+targetEntityType: media
+bundle: instagram
+mode: default
+content:
+  field_url:
+    weight: 0
+    label: hidden
+    settings:
+      width: null
+      hidecaption: false
+    third_party_settings: {  }
+    type: instagram_embed
+    region: content
+hidden:
+  created: true
+  field_author: true
+  name: true
+  thumbnail: true
+  uid: true

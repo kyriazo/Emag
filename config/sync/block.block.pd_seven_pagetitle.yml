@@ -1,0 +1,20 @@
+uuid: 052b9b20-994c-433e-bc03-2fb42b43cec0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - pd_seven
+_core:
+  default_config_hash: sUkcTqDdj4RKxEi0QznHpyCMgIRMpYraS8q3Yvn3ZMI
+id: pd_seven_pagetitle
+theme: pd_seven
+region: header
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

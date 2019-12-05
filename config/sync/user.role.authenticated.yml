@@ -1,0 +1,41 @@
+uuid: 8b9ebad8-3221-4571-a0c6-dbf11984ddb5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access cart'
+  - 'access checkout'
+  - 'access comments'
+  - 'access content'
+  - 'access polls'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'change own username'
+  - 'create customer profile'
+  - 'delete own customer profile'
+  - 'edit own comments'
+  - 'manage own commerce_payment_method'
+  - 'masquerade as administrator'
+  - 'masquerade as any user'
+  - 'masquerade as authenticated'
+  - 'masquerade as super user'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'update own customer profile'
+  - 'use text format basic_html'
+  - 'use text format mailchimp_campaign'
+  - 'view commerce_product'
+  - 'view files'
+  - 'view media'
+  - 'view own commerce_order'
+  - 'view own customer profile'
+  - 'view own unpublished content'
+  - 'view profile'

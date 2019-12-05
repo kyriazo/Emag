@@ -1,0 +1,58 @@
+uuid: 0a66ec3d-fa47-4842-8cd1-6fe78aafcd0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.field_channel
+    - field.field.node.article.field_comment
+    - field.field.node.article.field_paragraphs
+    - field.field.node.article.field_tags
+    - field.field.node.article.field_teaser_media
+    - field.field.node.article.field_teaser_text
+    - field.field.node.article.layout_selection
+    - node.type.article
+  module:
+    - field_formatter
+    - user
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  field_channel:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_teaser_media:
+    type: field_formatter_with_inline_settings
+    weight: 1
+    label: hidden
+    settings:
+      field_name: field_image
+      label: hidden
+      type: image
+      settings:
+        image_style: medium_teaser_card
+        image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_teaser_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  field_comment: true
+  field_paragraphs: true
+  field_tags: true
+  layout_builder__layout: true
+  layout_selection: true
+  links: true
+  shariff_field: true

@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - core.entity_view_mode.commerce_product.teaser
+    - field.field.commerce_product.default.body
+    - field.field.commerce_product.default.field_additional_informations
+    - field.field.commerce_product.default.field_category
+    - field.field.commerce_product.default.field_summary
+    - field.field.commerce_product.default.stores
+    - field.field.commerce_product.default.variations
+id: commerce_product.default.teaser
+targetEntityType: commerce_product
+bundle: default
+mode: teaser
+content:
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  field_additional_informations: true
+  field_category: true
+  field_summary: true
+  stores: true
+  uid: true
+  variations: true

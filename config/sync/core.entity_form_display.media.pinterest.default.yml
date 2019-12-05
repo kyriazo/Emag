@@ -1,0 +1,30 @@
+uuid: 9a2fe07e-ae5d-4c8a-b8e6-342eb979ed2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.pinterest.field_author
+    - field.field.media.pinterest.field_url
+    - media.type.pinterest
+  module:
+    - link
+id: media.pinterest.default
+targetEntityType: media
+bundle: pinterest
+mode: default
+content:
+  field_url:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  field_author: true
+  name: true
+  path: true
+  status: true
+  uid: true

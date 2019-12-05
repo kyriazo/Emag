@@ -1,0 +1,8 @@
+uuid: a232ea35-f929-4ac1-8b0c-d71fdc47e88b
+langcode: en
+status: true
+dependencies: {  }
+name: Channel
+vid: channel
+description: 'Use channels to organize your content.'
+weight: 0

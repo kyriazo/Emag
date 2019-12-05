@@ -1,0 +1,35 @@
+uuid: da0811cb-5a7c-4aef-9043-e0633208f3c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.video.field_description
+    - field.field.media.video.field_media_video_embed_field
+    - media.type.video
+  module:
+    - video_embed_field
+id: media.video.default
+targetEntityType: media
+bundle: video
+mode: default
+content:
+  field_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_media_video_embed_field:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+    region: content
+hidden:
+  created: true
+  name: true
+  path: true
+  status: true
+  uid: true

@@ -1,0 +1,22 @@
+uuid: b80d48f7-47e8-4f42-8eb5-afcc129301b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.advertisement
+    - field.field.block_content.advertisement.body
+  module:
+    - text
+id: block_content.advertisement.default
+targetEntityType: block_content
+bundle: advertisement
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,26 @@
+uuid: a813cdd1-1d1c-4aaf-a7d4-9b3db72ed3ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: editors_picks
+label: 'Editors'' Picks'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 4
+  act_as_queue: true
+  reverse_in_admin: true

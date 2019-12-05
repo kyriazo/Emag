@@ -1,0 +1,20 @@
+uuid: 9ca1bb2d-42a4-471d-843c-673de98cc1b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_account_name
+  module:
+    - user
+id: user.user.field_account_name
+field_name: field_account_name
+entity_type: user
+bundle: user
+label: 'Display name'
+description: 'This field refers to the account holder''s name, e.g., John Smith. The content of this field is used as an authors name instead of your Drupal username.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

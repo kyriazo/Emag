@@ -1,0 +1,22 @@
+uuid: 29fe6a3e-62a0-46eb-ab97-070bacad5d2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - pd_seven
+_core:
+  default_config_hash: ENvTXQGSYw1vIZZ-_qcq9LkFjWTWzgq1Zcv-6zzDvaI
+id: userlogin
+theme: pd_seven
+region: content
+weight: -2
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility: {  }

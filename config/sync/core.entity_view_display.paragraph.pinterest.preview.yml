@@ -1,0 +1,23 @@
+uuid: cac9d00f-07fe-4b13-9075-922ad885b550
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.pinterest.field_field_media
+    - paragraphs.paragraphs_type.pinterest
+id: paragraph.pinterest.preview
+targetEntityType: paragraph
+bundle: pinterest
+mode: preview
+content:
+  field_field_media:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: paragraph_preview
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

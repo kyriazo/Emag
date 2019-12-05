@@ -1,0 +1,213 @@
+uuid: bd5f1964-b3aa-40d6-b103-90319bb1ccc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - core.entity_view_mode.node.full
+    - field.field.node.article.field_channel
+    - field.field.node.article.field_comment
+    - field.field.node.article.field_paragraphs
+    - field.field.node.article.field_tags
+    - field.field.node.article.field_teaser_media
+    - field.field.node.article.field_teaser_text
+    - field.field.node.article.layout_builder__layout
+    - field.field.node.article.layout_selection
+    - node.type.article
+    - views.view.mg_article_headers
+    - views.view.mg_content_related_by_category
+    - views.view.mg_content_related_by_tags
+  module:
+    - comment
+    - entity_reference_revisions
+    - layout_builder
+    - layout_library
+    - shariff
+    - themag_layouts
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: themag_twocol_section
+        layout_settings:
+          section_bg: ''
+          section_padding: ''
+          section_margin: my-default
+          section_custom_classes: 'mt-5 mt-lg-6'
+          container_style: container
+          row_custom_classes: ''
+          no_gutters: 0
+          column_widths: 8-4
+          sticky_columns: 1
+          first:
+            custom_classes: ''
+          second:
+            custom_classes: ''
+        components:
+          f2d62462-d963-4be2-9393-722455c7a6c4:
+            uuid: f2d62462-d963-4be2-9393-722455c7a6c4
+            region: first
+            configuration:
+              id: shariff_block
+              label: 'Shariff share buttons'
+              provider: shariff
+              label_display: '0'
+              shariff_default_settings: 1
+              context_mapping: {  }
+            additional: {  }
+            weight: 6
+          c4c20d5e-9565-45d3-bc2f-55dc944a0031:
+            uuid: c4c20d5e-9565-45d3-bc2f-55dc944a0031
+            region: second
+            configuration:
+              id: 'views_block:mg_content_related_by_tags-block_1'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+          db76e31a-2dc4-4c56-a983-5f21227e022c:
+            uuid: db76e31a-2dc4-4c56-a983-5f21227e022c
+            region: first
+            configuration:
+              id: 'field_block:node:article:field_paragraphs'
+              label: Paragraphs
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 7
+          ff690253-d343-4fcd-a5ef-a8e495684af0:
+            uuid: ff690253-d343-4fcd-a5ef-a8e495684af0
+            region: first
+            configuration:
+              id: 'field_block:node:article:field_tags'
+              label: Tags
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 8
+          6247796f-5d23-4d41-bd33-905a1fcd5ec1:
+            uuid: 6247796f-5d23-4d41-bd33-905a1fcd5ec1
+            region: first
+            configuration:
+              id: 'field_block:node:article:field_comment'
+              label: Comments
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: comment_default
+                settings:
+                  view_mode: default
+                  pager_id: 0
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 9
+          e1b40fa2-a8f8-4161-862d-33680242b61c:
+            uuid: e1b40fa2-a8f8-4161-862d-33680242b61c
+            region: first
+            configuration:
+              id: 'views_block:mg_article_headers-block_1'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 4
+        third_party_settings: {  }
+      -
+        layout_id: themag_onecol_section
+        layout_settings:
+          section_bg: ''
+          section_padding: py-small
+          section_custom_classes: ''
+          container_style: container
+          row_custom_classes: ''
+          no_gutters: 0
+          column_widths: '12'
+          sticky_columns: 0
+          first:
+            custom_classes: ''
+        components:
+          6352d475-473a-4156-879b-05fef798a042:
+            uuid: 6352d475-473a-4156-879b-05fef798a042
+            region: first
+            configuration:
+              id: 'views_block:mg_content_related_by_category-block_1'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+  layout_library:
+    enable: true
+id: node.article.full
+targetEntityType: node
+bundle: article
+mode: full
+content:
+  field_comment:
+    type: comment_default
+    weight: 6
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    weight: 1
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  field_channel: true
+  field_teaser_media: true
+  field_teaser_text: true
+  layout_builder__layout: true
+  layout_selection: true
+  links: true
+  shariff_field: true

@@ -1,0 +1,167 @@
+uuid: eedcdeee-2828-4f93-9c23-e030b386f9d0
+langcode: en
+status: true
+dependencies: {  }
+id: article_layout_2
+label: 'Article Layout 2'
+targetEntityType: node
+targetBundle: article
+layout:
+  -
+    layout_id: themag_onecol_section
+    layout_settings:
+      section_bg: ''
+      section_padding: ''
+      section_custom_classes: ''
+      container_style: container-full
+      row_custom_classes: ''
+      no_gutters: 1
+      column_widths: '12'
+      sticky_columns: 0
+      first:
+        custom_classes: ''
+    components:
+      a75ab36c-082a-4ec6-855c-0d7c72c1eede:
+        uuid: a75ab36c-082a-4ec6-855c-0d7c72c1eede
+        region: first
+        configuration:
+          id: 'views_block:mg_article_headers-block_2'
+          label: ''
+          provider: views
+          label_display: '0'
+          views_label: ''
+          items_per_page: none
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: themag_onecol_section
+    layout_settings:
+      section_bg: ''
+      section_padding: ''
+      section_margin: ''
+      section_custom_classes: ''
+      container_style: container
+      row_custom_classes: ''
+      no_gutters: 0
+      column_widths: '8'
+      sticky_columns: 0
+      first:
+        custom_classes: ''
+    components:
+      79500578-65d7-4ae5-b32e-eda3c149843e:
+        uuid: 79500578-65d7-4ae5-b32e-eda3c149843e
+        region: first
+        configuration:
+          id: 'entity_field:node:field_paragraphs'
+          label: Paragraphs
+          provider: ctools_block
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: entity_reference_revisions_entity_view
+            settings:
+              view_mode: default
+            third_party_settings: {  }
+            weight: 0
+          context_mapping:
+            entity: layout_builder.entity
+        additional: {  }
+        weight: -8
+      e29e3759-8b36-42b9-af50-dcf0e19fa0db:
+        uuid: e29e3759-8b36-42b9-af50-dcf0e19fa0db
+        region: first
+        configuration:
+          id: shariff_block
+          label: 'Shariff share buttons'
+          provider: shariff
+          label_display: '0'
+          shariff_default_settings: 1
+          context_mapping: {  }
+        additional: {  }
+        weight: -9
+      199ad550-83b6-49a7-b133-8839f4f99e36:
+        uuid: 199ad550-83b6-49a7-b133-8839f4f99e36
+        region: first
+        configuration:
+          id: 'entity_field:node:field_tags'
+          label: Tags
+          provider: ctools_block
+          label_display: '0'
+          formatter:
+            label: inline
+            type: entity_reference_label
+            settings:
+              link: true
+            third_party_settings: {  }
+            weight: 0
+          context_mapping:
+            entity: layout_builder.entity
+        additional: {  }
+        weight: -7
+    third_party_settings: {  }
+  -
+    layout_id: themag_onecol_section
+    layout_settings:
+      section_bg: ''
+      section_padding: ''
+      section_margin: my-default
+      section_custom_classes: ''
+      container_style: container
+      row_custom_classes: ''
+      no_gutters: 0
+      column_widths: '12'
+      sticky_columns: 0
+      first:
+        custom_classes: ''
+    components:
+      3b3ee846-9f62-49e0-85f6-3fdffa5a297a:
+        uuid: 3b3ee846-9f62-49e0-85f6-3fdffa5a297a
+        region: first
+        configuration:
+          id: 'views_block:mg_content_related_by_category-block_1'
+          label: ''
+          provider: views
+          label_display: visible
+          views_label: ''
+          items_per_page: none
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: themag_onecol_section
+    layout_settings:
+      section_bg: gray-light
+      section_padding: py-small
+      section_margin: ''
+      section_custom_classes: ''
+      container_style: container
+      row_custom_classes: ''
+      no_gutters: 0
+      column_widths: '9'
+      sticky_columns: 0
+      first:
+        custom_classes: ''
+    components:
+      c6765e47-da7e-48b2-a802-5a47032ec356:
+        uuid: c6765e47-da7e-48b2-a802-5a47032ec356
+        region: first
+        configuration:
+          id: 'field_block:node:article:field_comment'
+          label: Comments
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: comment_default
+            settings:
+              view_mode: default
+              pager_id: 0
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }

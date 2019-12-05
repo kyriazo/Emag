@@ -1,0 +1,24 @@
+uuid: f384ce89-31a6-4e4c-b9b6-303043a95522
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mg_popular_tags
+  module:
+    - views
+  theme:
+    - themag_st
+id: themag_st_views_block__mg_popular_tags_block_1_2
+theme: themag_st
+region: footer_third
+weight: 0
+provider: null
+plugin: 'views_block:mg_popular_tags-block_1'
+settings:
+  id: 'views_block:mg_popular_tags-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

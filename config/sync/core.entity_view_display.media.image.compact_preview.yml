@@ -1,0 +1,32 @@
+uuid: 0801b5ca-6bd1-43e3-ac9c-22e27fc4112b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.compact_preview
+    - field.field.media.image.field_description
+    - field.field.media.image.field_image
+    - image.style.paragraph_preview
+    - media.type.image
+  module:
+    - image
+id: media.image.compact_preview
+targetEntityType: media
+bundle: image
+mode: compact_preview
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: paragraph_preview
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_description: true
+  name: true
+  thumbnail: true
+  uid: true

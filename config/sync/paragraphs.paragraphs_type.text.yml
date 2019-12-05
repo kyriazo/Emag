@@ -1,0 +1,9 @@
+uuid: 17013419-cfda-44ea-9a41-f0523980e425
+langcode: en
+status: true
+dependencies: {  }
+id: text
+label: Text
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

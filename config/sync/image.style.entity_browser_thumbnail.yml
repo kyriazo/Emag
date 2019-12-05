@@ -1,0 +1,15 @@
+uuid: 18c199ba-184a-49e9-aca0-ea33b2ff38ef
+langcode: en
+status: true
+dependencies: {  }
+name: entity_browser_thumbnail
+label: 'Entity browser thumbnail'
+effects:
+  9f00af00-11d9-4236-ada3-d3dfdb622585:
+    uuid: 9f00af00-11d9-4236-ada3-d3dfdb622585
+    id: image_scale
+    weight: 1
+    data:
+      width: 180
+      height: null
+      upscale: false

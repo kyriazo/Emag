@@ -1,0 +1,15 @@
+uuid: 1b585249-e437-44dc-ad32-e0cdc4168e16
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9sz1xUdRmwGeN6seByZJmRsrBtfVECpdzoKGBa2MwXk
+id: taxonomy_term
+label: 'Taxonomy term'
+tags:
+  description: '[term:description]'
+  title: '[term:name] | [site:name]'
+  og_description: '[term:description]'
+  og_site_name: '[site:name]'
+  og_title: '[term:name]'
+  og_url: '[current-page:url]'

@@ -1,0 +1,19 @@
+uuid: a48636cc-a858-48b7-a44a-61910b7199fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_text
+    - node.type.themag_landing_page
+id: node.themag_landing_page.field_teaser_text
+field_name: field_teaser_text
+entity_type: node
+bundle: themag_landing_page
+label: 'Teaser Text'
+description: 'The teaser text is displayed on overview pages. Additionally, it is used for Facebook and Google snippets'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

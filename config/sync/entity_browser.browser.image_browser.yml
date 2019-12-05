@@ -1,0 +1,53 @@
+uuid: 5766466e-a086-4c7e-a898-50873a33163d
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - views.view.image_browser
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+name: image_browser
+label: 'Image Browser'
+display: modal
+display_configuration:
+  width: '1245'
+  height: ''
+  link_text: 'Select image'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  7369589c-a7ec-4eca-a20f-41b66e53cf64:
+    settings:
+      form_mode: default
+      media_type: image
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Drop files here to upload them'
+      max_filesize: 32M
+      extensions: 'jpg jpeg gif png'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: 'Select entities'
+    uuid: 7369589c-a7ec-4eca-a20f-41b66e53cf64
+    weight: 1
+    label: 'Import image'
+    id: dropzonejs_media_entity_inline_entity_form
+  51f3013f-5d7b-46e5-bbec-6d0f636a6872:
+    settings:
+      view: image_browser
+      view_display: entity_browser_1
+      submit_text: 'Select existing'
+      auto_select: false
+    uuid: 51f3013f-5d7b-46e5-bbec-6d0f636a6872
+    weight: 2
+    label: 'Select existing'
+    id: view

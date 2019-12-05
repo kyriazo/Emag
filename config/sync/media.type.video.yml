@@ -1,0 +1,15 @@
+uuid: a54857de-5ac1-4f24-afed-a998e33cd1a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - video_embed_media
+id: video
+label: Video
+description: 'An embedded video from YouTube, Vimeo, etc.'
+source: video_embed_field
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_video_embed_field
+field_map: {  }

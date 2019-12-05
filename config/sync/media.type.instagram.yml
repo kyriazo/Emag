@@ -1,0 +1,21 @@
+uuid: 8912d88a-1c86-4821-a260-ccf443b63a56
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+    - media_entity_instagram
+third_party_settings:
+  crop:
+    image_field: null
+id: instagram
+label: Instagram
+description: 'An embedded Instagram post.'
+source: instagram
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_url
+field_map:
+  id: name
+  username: field_author

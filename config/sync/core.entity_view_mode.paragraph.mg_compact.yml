@@ -1,0 +1,10 @@
+uuid: 27f9d610-420a-43d2-a4c4-9defed88a44b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.mg_compact
+label: Compact
+targetEntityType: paragraph
+cache: true

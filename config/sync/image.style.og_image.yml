@@ -1,0 +1,17 @@
+uuid: 507d0a9c-1a11-4335-8cef-9b8a21453308
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: og_image
+label: 'Open Graph Image'
+effects:
+  b0fa8a6a-a5f4-4e1b-a2ae-b2b44e84902e:
+    uuid: b0fa8a6a-a5f4-4e1b-a2ae-b2b44e84902e
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 315
+      crop_type: focal_point

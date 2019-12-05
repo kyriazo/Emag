@@ -1,0 +1,23 @@
+uuid: 31b40c2a-3ba6-4fdb-80c7-dadd02595e2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.gallery_slider.field_field_media
+    - paragraphs.paragraphs_type.gallery_slider
+id: paragraph.gallery_slider.preview
+targetEntityType: paragraph
+bundle: gallery_slider
+mode: preview
+content:
+  field_field_media:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: paragraph_preview
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

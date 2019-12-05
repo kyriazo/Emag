@@ -1,0 +1,101 @@
+uuid: 2deada61-9786-426a-807f-f2dfc9cef8f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.paragraph_preview
+    - field.field.media.video.field_description
+    - field.field.media.video.field_media_video_embed_field
+    - image.style.paragraph_preview
+    - media.type.video
+  module:
+    - field_group
+    - video_embed_field
+third_party_settings:
+  field_group:
+    group_preview_wrapped:
+      children:
+        - group_preview_thumb
+        - group_preview_content
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: pd-preview-wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Preview Wrapped'
+      region: content
+    group_preview_thumb:
+      children:
+        - field_media_video_embed_field
+      parent_name: group_preview_wrapped
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: pd-preview-thumb
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Preview Thumb'
+      region: content
+    group_preview_content:
+      children:
+        - name
+        - field_description
+      parent_name: group_preview_wrapped
+      weight: 21
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: pd-preview-content
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Preview Content'
+      region: content
+id: media.video.paragraph_preview
+targetEntityType: media
+bundle: video
+mode: paragraph_preview
+content:
+  field_description:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_media_video_embed_field:
+    type: video_embed_field_thumbnail
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      image_style: paragraph_preview
+      link_image_to: ''
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 3
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  thumbnail: true
+  uid: true

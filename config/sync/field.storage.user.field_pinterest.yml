@@ -1,0 +1,19 @@
+uuid: cdf907fc-82c2-46ea-b12a-2013ddf266b1
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - user
+id: user.field_pinterest
+field_name: field_pinterest
+entity_type: user
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

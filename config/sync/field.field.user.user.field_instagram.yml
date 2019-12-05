@@ -1,0 +1,23 @@
+uuid: 21421415-0438-4dfc-8cc0-4130cec5a90c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_instagram
+  module:
+    - link
+    - user
+id: user.user.field_instagram
+field_name: field_instagram
+entity_type: user
+bundle: user
+label: Instagram
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

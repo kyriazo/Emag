@@ -1,0 +1,13 @@
+uuid: 8d988a71-7a25-462e-a2ef-2f563f2d311f
+langcode: en
+status: true
+dependencies:
+  module:
+    - realname
+_core:
+  default_config_hash: i4xLRtWNxhA-7Cgp3qbGOa1xtZAQTW_CLSc5WGY3trc
+id: realname_update_realname_action
+label: 'Update real names of the selected user(s)'
+type: user
+plugin: realname_update_realname_action
+configuration: {  }

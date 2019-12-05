@@ -1,0 +1,9 @@
+uuid: 6db4d277-56f5-4ac8-b903-208b0c96a747
+langcode: en
+status: true
+dependencies: {  }
+id: gallery_grid
+label: 'Gallery Grid'
+icon_uuid: null
+description: 'Grid photo gallery.'
+behavior_plugins: {  }

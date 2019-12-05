@@ -1,0 +1,40 @@
+uuid: 84737ff3-d613-49cd-b787-df982a44e409
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_description
+    - field.field.media.image.field_image
+    - image.style.entity_browser_thumbnail
+    - media.type.image
+  module:
+    - focal_point
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      preview_image_style: entity_browser_thumbnail
+      preview_link: true
+      offsets: '50,50'
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_focal_point
+    region: content
+hidden:
+  created: true
+  name: true
+  path: true
+  status: true
+  uid: true

@@ -1,0 +1,149 @@
+uuid: 8e614e53-688f-4b6e-ba48-d3a5f52ee44a
+langcode: en
+status: true
+dependencies: {  }
+id: article_layout_1
+label: 'Article Layout 1'
+targetEntityType: node
+targetBundle: article
+layout:
+  -
+    layout_id: themag_twocol_section
+    layout_settings:
+      section_bg: ''
+      section_padding: ''
+      section_margin: my-default
+      section_custom_classes: 'mt-5 mt-lg-6'
+      container_style: container
+      row_custom_classes: ''
+      no_gutters: 0
+      column_widths: 8-4
+      sticky_columns: 1
+      first:
+        custom_classes: ''
+      second:
+        custom_classes: ''
+    components:
+      ecf7aec6-d6b4-47be-90f2-e1e16468b39f:
+        uuid: ecf7aec6-d6b4-47be-90f2-e1e16468b39f
+        region: first
+        configuration:
+          id: 'views_block:mg_article_headers-block_1'
+          label: ''
+          provider: views
+          label_display: '0'
+          views_label: ''
+          items_per_page: none
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+      d2e30eae-94ea-4da5-aaaf-ff05a314a77b:
+        uuid: d2e30eae-94ea-4da5-aaaf-ff05a314a77b
+        region: first
+        configuration:
+          id: shariff_block
+          label: 'Shariff share buttons'
+          provider: shariff
+          label_display: '0'
+          shariff_default_settings: 1
+          context_mapping: {  }
+        additional: {  }
+        weight: 2
+      938b8330-effb-48ec-a4f3-469bddc4977f:
+        uuid: 938b8330-effb-48ec-a4f3-469bddc4977f
+        region: first
+        configuration:
+          id: 'field_block:node:article:field_paragraphs'
+          label: Paragraphs
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: entity_reference_revisions_entity_view
+            settings:
+              view_mode: default
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+        additional: {  }
+        weight: 3
+      d58a5822-647f-40f0-bbaa-7493ab05dc0f:
+        uuid: d58a5822-647f-40f0-bbaa-7493ab05dc0f
+        region: first
+        configuration:
+          id: 'field_block:node:article:field_tags'
+          label: Tags
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: inline
+            type: entity_reference_label
+            settings:
+              link: true
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+        additional: {  }
+        weight: 4
+      33d266ab-1fa5-401d-ba24-b67e7ea205a7:
+        uuid: 33d266ab-1fa5-401d-ba24-b67e7ea205a7
+        region: first
+        configuration:
+          id: 'field_block:node:article:field_comment'
+          label: Comments
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: comment_default
+            settings:
+              view_mode: default
+              pager_id: 0
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+        additional: {  }
+        weight: 5
+      a09f6316-de28-49ad-a55e-5c4752d46de7:
+        uuid: a09f6316-de28-49ad-a55e-5c4752d46de7
+        region: second
+        configuration:
+          id: 'views_block:mg_content_related_by_tags-block_1'
+          label: ''
+          provider: views
+          label_display: visible
+          views_label: ''
+          items_per_page: none
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: themag_onecol_section
+    layout_settings:
+      section_bg: ''
+      section_padding: ''
+      section_margin: my-default
+      section_custom_classes: ''
+      container_style: container
+      row_custom_classes: ''
+      no_gutters: 0
+      column_widths: '12'
+      sticky_columns: 0
+      first:
+        custom_classes: ''
+    components:
+      de0cb0e4-a5c4-4f08-8164-61120b854dab:
+        uuid: de0cb0e4-a5c4-4f08-8164-61120b854dab
+        region: first
+        configuration:
+          id: 'views_block:mg_content_related_by_category-block_1'
+          label: ''
+          provider: views
+          label_display: visible
+          views_label: ''
+          items_per_page: none
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }
