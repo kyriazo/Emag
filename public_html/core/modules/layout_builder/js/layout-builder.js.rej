@@ -1,0 +1,17 @@
+***************
+*** 56,62 ****
+    behaviors.layoutBuilderBlockDrag = {
+      attach: function attach(context) {
+        $(context).find('.js-layout-builder-region').sortable({
+-         items: '> .js-layout-builder-block',
+          connectWith: '.js-layout-builder-region',
+          placeholder: 'ui-state-drop',
+  
+--- 56,62 ----
+    behaviors.layoutBuilderBlockDrag = {
+      attach: function attach(context) {
+        $(context).find('.js-layout-builder-region').sortable({
++         items: '.js-layout-builder-block',
+          connectWith: '.js-layout-builder-region',
+          placeholder: 'ui-state-drop',
+  
